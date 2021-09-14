@@ -1,0 +1,45 @@
+@font-face {font-family: "Astoria Roman"; src: url("//db.onlinewebfonts.com/t/aeb8f7e23fc1ce7bd811248713cea1c4.eot"); src: url("//db.onlinewebfonts.com/t/aeb8f7e23fc1ce7bd811248713cea1c4.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/aeb8f7e23fc1ce7bd811248713cea1c4.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/aeb8f7e23fc1ce7bd811248713cea1c4.woff") format("woff"), url("//db.onlinewebfonts.com/t/aeb8f7e23fc1ce7bd811248713cea1c4.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/aeb8f7e23fc1ce7bd811248713cea1c4.svg#Astoria Roman") format("svg"); } 
+
+
+body{
+    margin: 0px;
+}
+
+.header{
+    
+    background-color: #52057b;
+    height: 100px;
+    
+}
+
+.header-title{
+    padding: 30px 100px 20px 100px;
+    font-family: Astoria Roman;
+    font-size: 32px;
+    text-align: center;
+    color: white;
+}
+
+.main{
+    background-color:  #bc6ff1;
+    font-family: Astoria Roman;
+    height: 900px;
+}
+
+.copy-container{
+    color: white;
+    padding: 9px;
+}
+
+.copy-container span{
+    color: #892CDC;
+}
+
+.copy-container h2{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #892CDC ;
+}
+.footer{
+    background-color: black;
+    height: 120px;
+}
