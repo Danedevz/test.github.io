@@ -1,32 +1,111 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Website</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <head>
+        <meta charset="utf-8">
+        <title>Microbiology - guide, video materials, archive, etc.</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            .bg-micro{
+                background-color:  #668D2E;
+            }
+            .text-cream{
+                color: #f5e1b9;
+            }
+            .ani-content{
+                animation: fadeIn 1.5s ease;
 
-<body>
-    <!--Membuat Layout bagian utama
-    Layout utama dibagi menjadi tiga bagian: copy-container, contents, dan contact-form-->
-    <div class="header">
-        <div class="header-title">
-            Inazuma, Land of Eternity
+            }
+            @keyframes fadeIn{
+                from { opacity: 0; font-size: 75%;}
+                to { opacity: 1; } 
+            }
+
+
+        </style>
+    
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-micro">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><b class="text-cream fst-italic">Microbiology</b></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #f5e1b9;">Home</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Alkohol
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Asam sitrat
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Bakteri asam laktat
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Isolasi enzim
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Minyak
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Tempe
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <div class="text-black-50 mt-5 text-center"><span class="display-3 ani-content">Selamat datang, Praktikan!</span></div>
         </div>
-        
-    </div>
-    <div class="main">
-        <div class="copy-container">
-            <!--Untuk mengubah format bagian tertentu dari heading, dapat digunakan tag "span" untuk mengapit bagian yang
-            ingin diformat-->
-            <h1>Welcome to <span>Inazuma</span>, fellow traveller!</h1>
-            <h2>Explore the new archipelago nation, inspired by the japanese culture</h2>
-            <img src="https://gamewith-en.akamaized.net/img/ab8f48aa12d11c3bbef0eae5a48d9657.jpg">
-            <p style="font-family: Arial, Helvetica, sans-serif; text-align: justify;">&emsp; &emsp;Inazuma is an archipelago nation consist of many different islands to explore. 
-                The nation is under the govermentship of the electro archon Raiden Shogun who seeks for eternity. To accomplish her goal, 
-                she made three commission. One of them is specialized to detain people's vision so that nobody with enough power to shake her absolute
-                posession of eternity. </p>
-        </div>
-    </div>
-    <div class="footer"></div>
-</body>
+    </body>
 </html>
