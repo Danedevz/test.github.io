@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Microbiology - guide, video materials, archive, etc.</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.10.377/build/pdf.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            .bg-micro{
+                background-color:  #668D2E;
+            }
+            .text-cream{
+                color: #f5e1b9;
+            }
+            .ani-content{
+                animation: fadeIn-zoom 1.5s ease;
+            }
+            @keyframes fadeIn-zoom{
+                from { opacity: 0; font-size: 75%;}
+                to { opacity: 1; } 
+            }
+            .ani-ul{
+              
+              margin: 0px auto;
+              width: 0%;
+              height: 100%;
+              border-bottom: 2px solid rgba(128, 128, 128, 0.445);
+              animation: expand 1.5s forwards;
+            }
+            @keyframes expand{
+              100%{width: 94%;}
+            }
+            .ani-fade{
+              animation: fadeIn 1s ease;
+
+            }
+            @keyframes fadeIn{
+              from {opacity: 0;}
+              to {opacity: 1;}
+            }
+            .bg-title{
+
+              height: 375px; 
+              background: 
+              linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("https://www.dropbox.com/s/99uxfm84wxb99du/Alcohol.png?raw=1");
+
+              background-size: cover;
+              box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+            }
+        </style>
+    
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-micro fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><b class="text-cream fst-italic">Microbiology</b></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #f5e1b9;">Home</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Alkohol
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="alkohol.html">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Asam sitrat
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Bakteri asam laktat
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Isolasi enzim
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Minyak
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #f5e1b9;">
+                          Tempe
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #f5e1b9;">
+                          <li><a class="dropdown-item" href="#">Laporan resmi</a></li>
+                          <li><a class="dropdown-item" href="#">Video</a></li>
+                          <li><a class="dropdown-item" href="#">Quizz</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid bg-title text-center ani-content">
+            <br>
+            <div class="text-black-50 mt-5">
+              <span class="display-3 text-light">Materi Alkohol</span>
+              <br>
+            </div>
+            <p class="text-light mt-5 mx-5 text-center" style="font-size: 16px; opacity: 0.8;"><b>"Dalam kimia, alkohol (atau alkanol) adalah istilah yang umum untuk senyawa organik apa pun yang memiliki gugus hidroksil (-OH) yang terikat pada atom karbon, yang ia sendiri terikat pada atom hidrogen dan/atau atom karbon lain."</b></p>
+            <p class="fst-italic m-2 text-light" style="font-size: 16px;"">(Source: Wikipedia)</p>
+        </div>
+        <div class="container-fluid" style="margin-top: 5px; background-color: rgb(185, 184, 184);">
+          <div class="container-fluid bg-light border rounded border-secondary">
+            <div class="text-black-50 m-1 text-center"><span class="h2 ani-content"><b>Laporan resmi</b></span></div>
+            <div class="ani-ul mb-3"></div>
+            <div class="text-sm-start text-break" style="font-size: 18px; margin-right: 5%; margin-left: 5%; "> Website ini menyediakan akses kepada praktikan-praktikan mikrobiologi untuk mempelajari materi-materi yang berkaitan dengan pretest, prosedur praktikum, dan sebagainya. Dengan hadirnya website ini, diharapkan para praktikan dapat terbantu dalam menjalani rangkaian praktikum</div>
+          </div>
+        </div>
+        
+        
+          
+      </div>
+    </body>
+</html>
